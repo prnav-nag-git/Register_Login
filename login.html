@@ -22,19 +22,20 @@
                   <h3 class="mb-5">Login Page</h3>
       
                   <div class="form-outline mb-4">
-                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-                    <label class="form-label" for="typeEmailX-2">Email</label>
+                    <input type="email" id="Email" class="form-control form-control-lg" />
+                    <label class="form-label" for="Email">Email</label>
                   </div>
       
                   <div class="form-outline mb-4">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                    <input type="password" id="Password" class="form-control form-control-lg" />
                     <label class="form-label" for="typePasswordX-2">Password</label>
                   </div>
       
                 
                   
       
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="hello()" >Login</button>
+                  
                
                   <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
                   <p>Don't have an account? <a href="/register.html" class="link-info">Register here</a></p>
@@ -56,5 +57,30 @@
           </div>
         </div>
       </section>
+      <script>
+        
+        function hello (){
+      
+          
+          var email = document.getElementById("Email").value;
+          var password = document.getElementById("Password").value
+          console.log(email)
+          console.log(password)
+
+         
+          if (email=="pranav@gmail.com" && password==12345){
+            alert("Form Submitted");
+            
+
+          }
+      else{
+        alert("Check input")
+
+      }
+          
+
+
+        }
+      </script>
 </body>
 </html>
